@@ -1,0 +1,92 @@
+@import 'variables';
+
+.header {
+    width: 100%;
+    padding: 30px 30px;
+    padding-bottom: 30px;
+    background-color: grey;
+    background-image: url(res/header-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        font-size: $header-font;
+    }
+
+    &__text {
+        color: $white-color;
+        font-weight: 600;
+        line-height: 24px;
+
+        &_orange {
+            color: $orange-color;
+        }
+
+        &_ten {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+            margin-bottom: 100px;
+            margin-top: 50px;
+
+            &::before {
+                content: '10';
+                position: absolute;
+                top: -15px;
+                left: 0;
+                right: 0;
+                font-size: 100px;
+                font-weight: 800;
+                color: $orange-color;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 250px;
+        
+        &_first {
+            width: 60%;
+            align-items: center;
+        }
+    }
+    &__form-block {
+        display: flex;
+        justify-content: flex-end;
+     }
+}
+
+.header-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: $form-background;
+    color: $white-color;
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__input {
+        margin-bottom: 15px;
+        padding: 5px;
+        border-bottom: 3px solid $white-color;
+        &::placeholder {
+            color: inherit;
+        }
+    }
+
+    &__button {
+        padding: 5px;
+        background-color: $button-background;
+    }
+}

@@ -1,0 +1,87 @@
+@import 'variables';
+
+.sidebar {
+    width: 250px;
+    padding: 20px 10px;
+    background-color: #383c4c;
+    color: $white-color;
+
+    &__title {
+        margin-bottom: 20px;
+        color: $white-color;
+        font-weight: normal;
+        font-size: 24px;
+        display: flex;
+    }
+
+    &__list {
+        margin-bottom: 20px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        font-weight: 600;
+        background-color: $white-color;
+        color: #383c4c;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        font-size: 12px;
+    }
+
+    &__button {
+        margin-bottom: 20px;
+        padding: 5px;
+        background-color: #F50;
+        border-radius: 20%;
+    }
+
+    &__location {
+        margin-bottom: 10px;
+    }
+
+    &__number {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        font-weight: normal;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        border: 1px solid $white-color;
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        transition: color .3s ease-out, background-color .3s ease-out;
+        &:hover {
+            color: #383c4c;
+            background-color: $white-color;
+        }
+    }
+}
